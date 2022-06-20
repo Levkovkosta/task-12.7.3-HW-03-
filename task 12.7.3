@@ -1,0 +1,5 @@
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+m=int(input("money="))
+deposit = [round(m/100*per_cent['ТКБ'],2), round(m/100*per_cent['СКБ'],2), round(m/100*per_cent['ВТБ'],2), round(m/100*per_cent['СБЕР'],2)]
+print (deposit)
+print ('Максимальная сумма, которую вы можете заработать — ', max(deposit))
